@@ -1,21 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
+    <header>
+        <div class="container">
+            <h1>My Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#posts">Posts</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<h2> what can JavaScripts do? </h2>
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome to My Blog</h2>
+            <p>Sharing thoughts, stories, and ideas.</p>
+        </div>
+    </section>
 
-<p> JavaScripts can change html attribute value. </p>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I am Abba Muhammad, a passionate blogger who loves writing about programming.</p>
+        </div>
+    </section>
 
-<p> In this case JavaScripts can change the value of src (source) attribute of an image. </p>  
-<p> M Aminu na Darawa.</p>
+    <section id="posts" class="posts">
+        <div class="container">
+            <h2>Latest Posts</h2>
+            <div class="post">
+                <h3>Post 1</h3>
+                <p>coding is my best habit. <a href="#">Read more...</a></p>
+            </div>
+            <div class="post">
+                <h3>Post  2</h3>
+                <p>coding is my best habit. <a href="#">Read more...</a></p>
+            </div>
+            <div class="post">
+                <h3>Post  3</h3>
+                <p>coding is my best habit. <a href="#">Read more...</a></p>
+            </div>
+        </div>
+    </section>
 
-<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
 
-<img id="myImage" src"pic_bulboff.gif" style"width:100px">
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Blog. All rights reserved.</p>
+        </div>
+    </footer>
 
-<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>  
-
-
-
+    <script src="scripts.js"></script>
 </body>
 </html>
+
